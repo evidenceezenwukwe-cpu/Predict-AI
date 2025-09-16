@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 # === Load your model and scaler ===
 @st.cache_resource
 def load_assets():
-    model = load_model("eurusd_predictor.keras", compile=False)
+    model = load_model("eurusd_predictor(1).keras", compile=False)
     with open("eurusd_scaler.pkl", "rb") as f:
         scaler = pickle.load(f)
     return model, scaler
